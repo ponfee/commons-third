@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>code.ponfee</groupId>
+  <artifactId>commons-third</artifactId>
+  <packaging>jar</packaging>
+  <version>1.0-SNAPSHOT</version>
+  <name>commons-third</name>
+
+  <dependencies>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>4.13</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.hamcrest</groupId>
+      <artifactId>hamcrest-library</artifactId>
+      <version>1.3</version>
+      <scope>test</scope>
+    </dependency>
+
+    <dependency>
+      <groupId>code.ponfee</groupId>
+      <artifactId>commons-core</artifactId>
+      <version>2.2-SNAPSHOT</version>
+      <exclusions>
+        <exclusion>
+          <groupId>dom4j</groupId>
+          <artifactId>dom4j</artifactId>
+        </exclusion>
+        <exclusion>
+          <groupId>com.caucho</groupId>
+          <artifactId>hessian</artifactId>
+        </exclusion>
+        <exclusion>
+          <groupId>de.ruedigermoeller</groupId>
+          <artifactId>fst</artifactId>
+        </exclusion>
+        <exclusion>
+          <groupId>redis.clients</groupId>
+          <artifactId>jedis</artifactId>
+        </exclusion>
+        <exclusion>
+          <groupId>org.springframework.data</groupId>
+          <artifactId>spring-data-redis</artifactId>
+        </exclusion>
+        <exclusion>
+          <groupId>com.itextpdf</groupId>
+          <artifactId>itextpdf</artifactId>
+        </exclusion>
+        <exclusion>
+          <groupId>antlr</groupId>
+          <artifactId>antlr</artifactId>
+        </exclusion>
+        <exclusion>
+          <groupId>net.sourceforge.jargs</groupId>
+          <artifactId>jargs</artifactId>
+        </exclusion>
+        <exclusion>
+          <groupId>net.sourceforge.jchardet</groupId>
+          <artifactId>jchardet</artifactId>
+        </exclusion>
+        <exclusion>
+          <groupId>net.sourceforge.cpdetector</groupId>
+          <artifactId>cpdetector</artifactId>
+        </exclusion>
+      </exclusions>
+    </dependency>
+
+
+    <!-- ====================本地jar依赖==================== -->
+    <!-- 数字信封 -->
+    <dependency>
+      <groupId>third-jce</groupId>
+      <artifactId>third-jce</artifactId>
+      <version>1.0</version>
+      <!-- <scope>system</scope>
+      <systemPath>${pom.basedir}/lib/third-jce-1.0.jar</systemPath> -->
+    </dependency>
+
+    <!-- world to pdf -->
+    <dependency>
+      <groupId>aspose</groupId>
+      <artifactId>words-jdk16</artifactId>
+      <version>1.0</version>
+      <!-- <scope>system</scope>
+      <systemPath>${pom.basedir}/lib/aspose-words-jdk16-1.0.jar</systemPath> -->
+    </dependency>
+    <!-- ====================本地jar依赖==================== -->
+
+  </dependencies>
+
+</project>
