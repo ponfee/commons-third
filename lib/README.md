@@ -1,4 +1,4 @@
-## 本地非标准maven依赖库安装（解决无法传递依赖问题）
+## 第三方jar包本地安装
 
 ## --------------------------------------------------------------------------------install
 ### mvn install:install-file  -Dfile=aspose-words-jdk16-1.0.jar  -DgroupId=aspose     -DartifactId=words-jdk16  -Dversion=1.0  -Dpackaging=jar
